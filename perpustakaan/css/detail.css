@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #007BFF;
+}
+
+.book-details {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.book-cover {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.book-cover img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.book-info {
+    flex: 2;
+}
+
+.book-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #343a40;
+}
+
+.book-info p strong {
+    color: #007BFF;
+}
+
+form button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .book-details {
+        flex-direction: column;
+    }
+
+    .book-cover {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.book-cover img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
